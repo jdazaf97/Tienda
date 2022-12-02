@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn para fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <!-- titulo -->
+    <title>Section About</title>
+    <!-- determinamos hoja de estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <!-- Ingresamos el logo de la pagina -->
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li><!-- ingresamos la clase active, para que en css determine que el efecto que se ponga permanezca activo si se encuentra en la pagina correspondiente, en este caso en la pagina de Home -->
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li><!--le agregamos una id a este para quitar el icono cuando la pagina se abre en un dispositivo movil -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <!-- ahora creamos aqui la seccion para el menu en dispositivos moviles (menu hamburguesa) -->
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i><!-- icono para desplegar menu -->
+            <!-- esto tambien se va a mostrar cuando estemos en la pantalla del escritorio y no queremos esto, por lo que editamos en para que no aparezca en navbar a no ser que la pantalla sea pequena -->
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="page-header" class="about-header">
+        <h2>#Cart</h2>
+        <p>Add your coupon code & SAVE upto 70%!</p>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="section-p1">
+        <table width="100%"><!-- creamos la tabla -->
+            <thead><!-- cabecera de la tabla -->
+                <tr><!-- primera fila -->
+                    <!-- datos de las filas: -->
+                    <td>REMOVE</td>
+                    <td>IMAGE</td>
+                    <td>PRODUCT</td>
+                    <td>PRICE</td>
+                    <td>QUANTITY</td>
+                    <td>SUBTOTAL</td>
+                </tr>
+            </thead>
+            <tbody><!-- contenido de la tabla -->
+                <tr><!-- primera fila -->
+                    <!-- datos de las filas -->
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartool Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr><!-- Segunda fila -->
+                    <!-- datos de las filas -->
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartool Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr><!-- Tercera fila -->
+                    <!-- datos de las filas -->
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></i></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartool Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118.19</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Coupon and Total Section -->
+    <section id="cart-add" class="section-p1">
+        <!-- Coupon Section -->
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <!-- Total Section -->
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 355</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Street 11 - 22</p> 
+            <p><strong>Phone:</strong> 018000235125/(+91)01 2345 6789</p> 
+            <p><strong>Hours:</strong> 09:00 - 18:00. Mon - Sat</p> 
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secures Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>2022. CopyRight</p>
+        </div>
+    </footer>
+
+    <!-- determinamos script JS -->
+    <script src="script.js"></script>
+</body>
+</html>

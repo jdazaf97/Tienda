@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cdn para fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <!-- titulo -->
+    <title>Section SHOP</title>
+    <!-- determinamos hoja de estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="header">
+        <!-- Ingresamos el logo de la pagina -->
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li><!-- ingresamos la clase active, para que en css determine que el efecto que se ponga permanezca activo si se encuentra en la pagina correspondiente, en este caso en la pagina de Home -->
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li><!--le agregamos una id a este para quitar el icono cuando la pagina se abre en un dispositivo movil -->
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <!-- ahora creamos aqui la seccion para el menu en dispositivos moviles (menu hamburguesa) -->
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i><!-- icono para desplegar menu -->
+            <!-- esto tambien se va a mostrar cuando estemos en la pantalla del escritorio y no queremos esto, por lo que editamos en para que no aparezca en navbar a no ser que la pantalla sea pequena -->
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="page-header">
+        <h2>#stayhome</h2>
+        <p>save more with coupons & up to 70% off!</p>
+    </section>
+
+    <!-- Features Products Section -->
+    <section id="product1" class="section-p1"><!-- colocamos la misma clase que la seccion feature para determinar el padding -->
+        <div class="pro-container">
+            <!-- producto 1 -->
+            <div class="pro" onclick="window.location.href='sproduct.html'"> <!-- colocamos "onclick" para determinar que vaya a una nueva ventan y esta se localiza como href y colocamos el archivo html que corresponde -->
+                <img src="img/products/f1.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 2 -->
+            <div class="pro">
+                <img src="img/products/f2.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 3 -->
+            <div class="pro">
+                <img src="img/products/f3.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 4 -->
+            <div class="pro">
+                <img src="img/products/f4.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 5 -->
+            <div class="pro">
+                <img src="img/products/f5.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 6 -->
+            <div class="pro">
+                <img src="img/products/f6.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 7 -->
+            <div class="pro">
+                <img src="img/products/f7.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 8 -->
+            <div class="pro">
+                <img src="img/products/f8.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 9 -->
+            <div class="pro">
+                <img src="img/products/n1.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 10 -->
+            <div class="pro">
+                <img src="img/products/n2.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 11 -->
+            <div class="pro">
+                <img src="img/products/n3.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 12 -->
+            <div class="pro">
+                <img src="img/products/n4.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 13 -->
+            <div class="pro">
+                <img src="img/products/n5.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 14 -->
+            <div class="pro">
+                <img src="img/products/n6.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 15 -->
+            <div class="pro">
+                <img src="img/products/n7.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+            <!-- producto 16 -->
+            <div class="pro">
+                <img src="img/products/n8.jpg" alt=""><!-- imagen del producto -->
+                <div class="des">
+                    <span>Adidas</span><!-- marca del producto -->
+                    <h5>Cartoon Astronaut T-Shirts</h5> <!-- descripcion del producto -->
+                    <div class="star"><!-- calificacion del producto -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4><!-- precio del producto -->
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a><!-- podemos agregar otra clase, en este caso colocamos al final "cart" porque con ese nombre de clase vamos a dar estilo -->
+            </div>
+        </div>
+    </section>
+    <!-- Botones de navegacion para ver mas productos -->
+    <section id="pagination" class="section-p1">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><i class="fal fas fa-long-arrow-alt-right"></i></a>
+    </section>
+
+
+    <!-- News Letter Section -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For NewsLetters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your e-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> Street 11 - 22</p> 
+            <p><strong>Phone:</strong> 018000235125/(+91)01 2345 6789</p> 
+            <p><strong>Hours:</strong> 09:00 - 18:00. Mon - Sat</p> 
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secures Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>2022. CopyRight</p>
+        </div>
+    </footer>
+
+    <!-- determinamos script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
